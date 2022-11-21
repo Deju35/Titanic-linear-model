@@ -10,3 +10,8 @@ else:
         import zipfile,kaggle
         kaggle.api.competition_download_cli(str(path))
         zipfile.ZipFile(f'{path}.zip').extractall(path)
+        
+        import torch, numpy as np, pandas as pd
+np.set_printoptions(linewidth=140)
+torch.set_printoptions(linewidth=140, sci_mode=False, edgeitems=7)
+pd.set_option('display.width', 140)
