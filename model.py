@@ -15,3 +15,6 @@ else:
 np.set_printoptions(linewidth=140)
 torch.set_printoptions(linewidth=140, sci_mode=False, edgeitems=7)
 pd.set_option('display.width', 140)
+
+df = pd.read_csv(path/'train.csv')
+df
